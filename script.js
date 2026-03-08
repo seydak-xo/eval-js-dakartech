@@ -5,7 +5,7 @@ const erreur = document.querySelector("#erreur");
 const compteur = document.querySelector("#compteur");
 const listeTaches = document.querySelector("#listeTaches");
 
-function onclickAjouterTache() {
+function onclickajouterTache() {
   const texte = champ.value;
 
   if (!texte) {
@@ -52,6 +52,7 @@ function afficherListe() {
     }
 
 }
+
 
 
 
