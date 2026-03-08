@@ -41,7 +41,16 @@ function afficherListe() {
     elementListeTaches.innerHTML = "";
     let nbEnCours = 0;
 
-    for (let i = 0; i < taches.length; i++) 
+    for (let i = 0; i < taches.length; i++) {   
+        const tache = taches[i];
+        const li = document.createElement("li");
+        if (tache.terminee === true) {
+            li.className = "termine";
+        } else {
+            nbEnCours++;
+        }
+    }
 
 }
+
 
