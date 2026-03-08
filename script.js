@@ -22,3 +22,25 @@ function ajouterTache() {
   afficherListe();
 }
 
+
+function supprimerTache(index) {
+    taches.splice(index, 1);
+    afficherListe();
+}
+
+function terminerTache(index) {
+    if (taches[index].termine === false) {
+        taches[index].termine = true;
+    } else {
+        taches[index].termine = false;
+    }
+    afficherListe();
+}
+
+function afficherListe() {
+    elementListeTaches.innerHTML = "";
+    let nbEnCours = 0;
+
+    for (let i = 0; i < taches.length; i++) 
+
+}
