@@ -49,9 +49,14 @@ function afficherListe() {
         } else {
             nbEnCours++;
         }
+        li.innerHTML = tache.texte + " <button onclick='onclickTerminerTache(" + i + ")'>Terminé</button>";
+        li.innerHTML += " <button onclick='onclickSupprimerTache(" + i + ")'>Supprimer</button>";
+        
+        listeTaches.appendChild(li);
     }
-
+compteur.textContent = nbEnCours + " tâche(s) en cours";
 }
+
 
 
 
