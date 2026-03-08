@@ -15,7 +15,7 @@ function onclickAjouterTache() {
 
   erreur.textContent = "";
 
-  taches.push({ texte: texte, terminee: false });
+  taches.push({ texte: texte, termine: false });
 
   champ.value = "";
 
@@ -38,13 +38,13 @@ function onclickTerminerTache(index) {
 }
 
 function afficherListe() {
-    elementListeTaches.innerHTML = "";
+    listeTaches.innerHTML = "";
     let nbEnCours = 0;
 
     for (let i = 0; i < taches.length; i++) {   
         const tache = taches[i];
         const li = document.createElement("li");
-        if (tache.terminee === true) {
+        if (tache.termine === true) {
             li.className = "termine";
         } else {
             nbEnCours++;
@@ -52,5 +52,6 @@ function afficherListe() {
     }
 
 }
+
 
 
