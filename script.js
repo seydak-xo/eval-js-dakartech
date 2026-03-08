@@ -5,7 +5,7 @@ const erreur = document.querySelector("#erreur");
 const compteur = document.querySelector("#compteur");
 const listeTaches = document.querySelector("#listeTaches");
 
-function ajouterTache() {
+function onclickAjouterTache() {
   const texte = champ.value;
 
   if (!texte) {
@@ -23,12 +23,12 @@ function ajouterTache() {
 }
 
 
-function supprimerTache(index) {
+function onclickSupprimerTache(index) {
     taches.splice(index, 1);
     afficherListe();
 }
 
-function terminerTache(index) {
+function onclickTerminerTache(index) {
     if (taches[index].termine === false) {
         taches[index].termine = true;
     } else {
@@ -44,3 +44,4 @@ function afficherListe() {
     for (let i = 0; i < taches.length; i++) 
 
 }
+
