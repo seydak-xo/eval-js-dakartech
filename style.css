@@ -30,3 +30,32 @@ body {
     border: none;
     cursor: pointer;
 }
+
+#erreur {
+    color: red;
+    font-size: 13px;
+}
+
+#listeTaches {
+    list-style: none;
+    padding: 0;
+}
+
+#listeTaches li {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#listeTaches li button {
+    margin-left: 5px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.termine {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
